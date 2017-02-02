@@ -10,7 +10,7 @@ export default function virtualScroll(x, y, remove, options) {
    * an element inside DOM up instead of default `<html />`
    */
   let html = options && options.scroll
-    ? document.querySelector('.test-target')
+    ? document.querySelector(options.scroll)
     : document.documentElement;
 
   html.style.webkitTransform = translate;
